@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SegaAMNetLib", "SegaAMNetLib\SegaAMNetLib.csproj", "{73335451-EB52-4AA4-8E26-8BA8FB9097F7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dependencies", "Dependencies", "{76242AEC-4D20-4C69-B4A2-8E0B998DA224}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Haruka.Common", "Haruka.Common\Haruka.Common.csproj", "{C001C60D-4298-4909-AD5A-8E7E8FE87704}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{73335451-EB52-4AA4-8E26-8BA8FB9097F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73335451-EB52-4AA4-8E26-8BA8FB9097F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73335451-EB52-4AA4-8E26-8BA8FB9097F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73335451-EB52-4AA4-8E26-8BA8FB9097F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C001C60D-4298-4909-AD5A-8E7E8FE87704}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C001C60D-4298-4909-AD5A-8E7E8FE87704}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C001C60D-4298-4909-AD5A-8E7E8FE87704}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C001C60D-4298-4909-AD5A-8E7E8FE87704}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C001C60D-4298-4909-AD5A-8E7E8FE87704} = {76242AEC-4D20-4C69-B4A2-8E0B998DA224}
+	EndGlobalSection
+EndGlobal
