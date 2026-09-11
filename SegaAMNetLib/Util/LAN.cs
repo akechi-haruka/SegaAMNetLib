@@ -54,4 +54,12 @@ public static class Lan {
     public static UnicastIPAddressInformation GetAdapterIpV4Properties(NetworkInterface ni) {
         return ni.GetIPProperties().UnicastAddresses.FirstOrDefault(ip => ip.Address.AddressFamily == AddressFamily.InterNetwork);
     }
+
+    public static bool IsPrimaryAdapterUsingDhcp() {
+        return GetPrimaryAdapter().GetIPProperties().GetIPv4Properties().IsDhcpEnabled;
+    }
+
+    public static string GetPrimaryMacAddress() {
+        return String.Join('-', GetPrimaryAdapter().GetPhysicalAddress().GetAddressBytes().Select(b => b.ToString("X2")));
+    }
 }
