@@ -44,6 +44,10 @@ public static class Lan {
 
     public static NetworkInterface GetPrimaryAdapter() {
         String primary = GetPrimaryLanIp();
+        if (primary == null) {
+            return null;
+        }
+
         return NetworkInterface.GetAllNetworkInterfaces().FirstOrDefault(na => na.GetIPProperties().UnicastAddresses.FirstOrDefault(var => var.Address.ToString() == primary) != null);
     }
 
